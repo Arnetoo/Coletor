@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frm_Principal.css">
+    <script defer src="./frm_Principal.js"></script>
+    <title>Campanhas</title>
+    <style>    
+    </style>
+</head>
+<body>
+  <button onclick="login()" class="sair">Sair</button>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Cadastro de Campanhas</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="concorrente" id="concorrente" class="inputUser" required>
+                    <label for="concorrente" class="labelInput">Concorrente</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome da Campanha</label>
+                </div>
+                <p>Modalidade:</p>
+                <input type="radio" id="presencial" name="modalidade" value="PRESENCIAL" required>
+                <label for="presencial">Presencial</label>
+                <br>
+                <input type="radio" id="ead" name="modalidade" value="EAD" required>
+                <label for="ead">EAD</label>
+                <br>
+                <input type="radio" id="semipresencial" name="modalidade" value="SEMIPRESENCIAL" required>
+                <label for="semipresencial">Semipresencial</label>
+                <br><br>
+                <label for="data"><b>Valido até:</b></label>
+                <input type="date" name="data" id="data" required>
+                <br><br>
+                <div class="inputBox">
+                  <label for="categoria">Categoria:</label>
+                  <select name="categoria" id="categoria">
+                    <option value="Campanha de Transferencia">Campanha de Transferencia</option>
+                    <option value="Campanha de Desconto">Campanha de Desconto</option>
+                    <option value="Campanha de Isensão de Matricula">Campanha de Isensão de Matricula</option>
+                    <option value="Campanha de Isensão de Mensalidade">Campanha de Isensão de Matricula</option>
+                  </select>
+                </div>
+                <br>
+                <div class="inputBox">
+                  <label for="ciclo">Ciclo:</label>
+                  <select name="ciclo" id="ciclo">
+                    <option value="22.2">22.2</option>
+                    <option value="23.1">23.1</option>
+                    <option value="23.2">23.2</option>
+                    <option value="24.1">24.1</option>
+                  </select>
+                </div>
+                <p>Medicina:</p>
+                <input type="radio" id="med_sim" name="med_sim" value="SIM" required>
+                <label for="med_sim">Sim</label>
+                <input type="radio" id="med_nao" name="med_nao" value="Não" required>
+                <label for="med_nao">Não</label>
+                <br>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
